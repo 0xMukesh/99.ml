@@ -17,6 +17,9 @@
  (name ninety_nine)
  (synopsis "My solutions to 99 OCaml problems")
  (description "My solutions to 99 OCaml problems")
- (depends ocaml)
+ (depends
+  ocaml
+  (ocaml-lsp-server :with-dev-setup)
+  (ocamlformat :with-dev-setup))
  (tags
   ("ninety-nine")))

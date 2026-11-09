@@ -1,0 +1,6 @@
+version = 0.29.0
+profile = janestreet
+exp-grouping = parens
+sequence-blank-line = preserve-one
+parens-tuple = always
+indicate-multiline-delimiters = closing-on-separate-line
