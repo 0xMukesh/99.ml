@@ -1,3 +1,5 @@
 let () =
-  print_endline @@ string_of_bool @@ Problems.list_is_palindrome [ "x"; "a"; "m"; "a" ]
+  let open Problems in
+  let result = list_replicate_elements [ "a"; "b"; "c" ] 3 in
+  List.iter (fun s -> print_endline s) result
 ;;
