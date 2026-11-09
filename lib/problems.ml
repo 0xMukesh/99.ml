@@ -12,10 +12,14 @@ let rec list_last_two_elems l =
   | a :: b :: tl -> list_last_two_elems tl
 ;;
 
-let rec list_nth_elem n l =
-  match l with
-  | [] -> None
-  | hd :: tl -> if n = 0 then Some hd else list_nth_elem (n - 1) tl
+let rec list_nth_elem l n =
+  if n < 0
+  then None
+  else (
+    match l with
+    | [] -> None
+    | hd :: tl -> if n = 0 then Some hd else list_nth_elem tl (n - 1)
+  )
 ;;
 
 let rec list_len l =

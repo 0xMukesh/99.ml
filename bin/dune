@@ -1,4 +1,0 @@
-(executable
- (public_name ninety_nine)
- (name main)
- (libraries problems))

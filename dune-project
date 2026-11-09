@@ -17,8 +17,10 @@
  (name ninety_nine)
  (synopsis "My solutions to 99 OCaml problems")
  (description "My solutions to 99 OCaml problems")
+ (allow_empty)
  (depends
   ocaml
+  (alcotest :with-dev-setup)
   (ocaml-lsp-server :with-dev-setup)
   (ocamlformat :with-dev-setup))
  (tags
